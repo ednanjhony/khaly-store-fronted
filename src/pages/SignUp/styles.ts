@@ -5,6 +5,7 @@ export const Container = styled.div`
   height: 100vh;
 
   display: flex;
+  margin-top: 10px;
   align-items: stretch;
 `;
 
@@ -22,9 +23,10 @@ export const Background = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  margin-top: 20px;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-top: 20px;
   align-items: center;
 
   form {
@@ -71,7 +73,6 @@ export const Content = styled.div`
       color: ${shade(0.2, '#e57373')};
     }
   }
-
   img {
     height: 200px;
     width: 200px;
