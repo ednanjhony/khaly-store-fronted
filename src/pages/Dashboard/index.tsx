@@ -2,6 +2,8 @@ import React from 'react';
 import { FiArrowDown, FiSearch, FiShoppingCart, FiUser } from 'react-icons/fi';
 
 import logoImg from '../../assets/khali.png';
+import main2 from '../../assets/main2.jpg';
+import main1 from '../../assets/main1.jpg';
 
 import { Container, Header, Logo, List, Nav, Main } from './styles';
 
@@ -43,7 +45,12 @@ const Dashboard: React.FC = () => (
     </Header>
 
     <Main>
-      <span>oi</span>
+      <div>
+        <img src={main2} alt="" />
+      </div>
+      <div>
+        <img src={main1} alt="" />
+      </div>
     </Main>
   </Container>
 );

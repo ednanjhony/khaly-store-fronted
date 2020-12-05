@@ -48,7 +48,23 @@ export const Nav = styled.div`
 
 export const Main = styled.main`
   display: flex;
+  justify-content: space-between;
   max-width: 100%;
   height: 600px;
-  margin-top: 30px;
+  margin: 100px 200px 0 200px;
+
+  div {
+    height: 350px;
+    width: 350px;
+    border-radius: 9px;
+    box-shadow: 2px 2px 2px #e0e0e0;
+    background-color: #e0e0e0;
+
+    img {
+      width: 350px;
+      height: 350px;
+      border-radius: 9px;
+      margin: 30px 40px 0 40px;
+    }
+  }
 `;
