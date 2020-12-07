@@ -111,8 +111,6 @@ export const Main = styled.main`
       }
     }
   }
-
-  @media (max-width: );
 `;
 
 export const Description = styled.div`
