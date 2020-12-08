@@ -2,6 +2,7 @@ import React from 'react';
 import { FiSearch, FiShoppingCart, FiUser } from 'react-icons/fi';
 
 import logoImg from '../../assets/khali.png';
+import main3 from '../../assets/main3.jpg';
 import main2 from '../../assets/main2.jpg';
 import main1 from '../../assets/main1.jpg';
 import description from '../../assets/description.jpg';
@@ -15,6 +16,7 @@ import {
   List,
   Nav,
   Main,
+  Background,
   Description,
 } from './styles';
 
@@ -69,14 +71,23 @@ const Dashboard: React.FC = () => (
     </Navigation>
 
     <Main>
-      <div>
-        <img src={main2} alt="" />
-        <button type="button">COMPRE AGORA</button>
-      </div>
-      <div>
-        <img src={main1} alt="" />
-        <button type="button">COMPRE AGORA</button>
-      </div>
+      <Background>
+        <div className="twoImages">
+          <img src={main3} alt="main3" />
+          <button type="button">COMPRE AGORA</button>
+          <img src={main1} alt="main1" />
+          <button type="button">COMPRE AGORA</button>
+        </div>
+        <div className="oneImage">
+          <img src={main2} alt="main2" />
+          <button type="button">COMPRE AGORA</button>
+        </div>
+        <div className="box">
+          <h1>Experimente nossas peças.</h1>
+          <h1>Viva bons momentos.</h1>
+          <h1>Tire boas fotos.</h1>
+        </div>
+      </Background>
     </Main>
 
     <Description>
