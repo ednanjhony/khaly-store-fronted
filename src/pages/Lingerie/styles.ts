@@ -81,6 +81,10 @@ export const Main = styled.main`
   max-width: 100%;
   height: 1100px;
 
+  @media (max-width: 1410px) {
+    height: 1600px;
+  }
+
   @media (max-width: 1300px) {
     height: 1900px;
   }
@@ -115,12 +119,16 @@ export const Title = styled.div`
 export const Background = styled.div`
   background-color: #fff;
   height: 900px;
-  width: 95%;
+  width: 85%;
   border-radius: 9px;
   margin-top: 30px;
 
-  @media (max-width: 1300px) {
-    height: 1700px;
+  @media (max-width: 1410px) {
+    height: 1600px;
+  }
+
+  @media (max-width: 1100px) {
+    height: 1750px;
   }
 `;
 
@@ -131,7 +139,7 @@ export const Products = styled.div`
   margin: 0 auto;
   grid-gap: 20px;
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1500px) {
     grid-template-columns: repeat(3, 1fr);
   }
 
