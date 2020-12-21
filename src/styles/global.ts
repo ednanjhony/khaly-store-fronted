@@ -8,8 +8,12 @@ export default createGlobalStyle`
     outline: 0;
   }
 
-  body {
+  html,body, #root {
+    max-height: 100vh;
+    max-width: 100vw;
+
     width: 100%;
+    height: 100%;
     background: #FFB6C1;
     color: #FFF;
     -webkit-font-smoothing: antialiased;

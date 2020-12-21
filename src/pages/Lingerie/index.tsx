@@ -1,141 +1,167 @@
 import React from 'react';
-import { FiSearch, FiShoppingCart, FiUser } from 'react-icons/fi';
+import {
+  FiSearch,
+  FiShoppingCart,
+  FiUser,
+  FiFacebook,
+  FiInstagram,
+} from 'react-icons/fi';
 
-import logoImg from '../../assets/khali.png';
-import main3 from '../../assets/main3.jpg';
+import logo from '../../assets/khali.png';
+import item1 from '../../assets/item1.jpg';
+import item2 from '../../assets/item2.jpg';
+import item3 from '../../assets/item3.jpg';
 
 import {
   Container,
   Header,
-  Logo,
-  HeaderWelcome,
+  Message,
   Navigation,
-  List,
-  Nav,
-  Main,
-  Title,
-  Background,
-  Products,
+  Section,
+  Footer,
 } from './styles';
 
-const Lingerie: React.FC = () => (
-  <Container>
-    <Header>
-      <Logo>
-        <img src={logoImg} alt="KhalyStore" />
-      </Logo>
-    </Header>
+const Lingiries: React.FC = () => {
+  return (
+    <Container>
+      <Message>
+        <h2>Bem-vindo a Khaly</h2>
+      </Message>
+      <Header>
+        <img src={logo} alt="KhalyStore" />
 
-    <HeaderWelcome>
-      <h1>Bem-Vindo a Khaly store</h1>
-    </HeaderWelcome>
+        <Navigation>
+          <div className="itens">
+            <ul>
+              <li>
+                <a href="lingiries">Lingiries</a>
+              </li>
+              <li>
+                <a href="biquinis">Biquinis</a>
+              </li>
+              <li>
+                <a href="semijoias">Semijoias</a>
+              </li>
+              <li>
+                <a href="folheadas">Folheadas</a>
+              </li>
+            </ul>
+          </div>
 
-    <Navigation>
-      <List>
-        <li>
-          <a href="/">Lingeries</a>
-        </li>
-        <li>
-          <a href="/">Biquinis</a>
-        </li>
-        <li>
-          <a href="/">Semi-joias</a>
-        </li>
-        <li>
-          <a href="/">Bijuteria</a>
-        </li>
-        <li>
-          <a href="/">Folheado</a>
-        </li>
-      </List>
+          <div className="menu">
+            <ul>
+              <li>
+                <a href="/search">
+                  <FiSearch />
+                </a>
+              </li>
+              <li>
+                <a href="/cart">
+                  <FiShoppingCart />
+                </a>
+              </li>
+              <li>
+                <a href="/SignIn">
+                  <FiUser />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </Navigation>
+      </Header>
 
-      <Nav>
-        <li>
-          <a href="/search">
-            <FiSearch />
+      <Section>
+        <div className="itens">
+          <a href="lingirie">
+            <img src={item1} alt="Lingirie" />
+            <h3>Lingirie</h3>
+            <span>R$ 100,00</span>
           </a>
-        </li>
-        <li>
-          <a href="/cart">
-            <FiShoppingCart />
-          </a>
-        </li>
-        <li>
-          <a href="/SignIn">
-            <FiUser />
-          </a>
-        </li>
-      </Nav>
-    </Navigation>
-
-    <Main>
-      <Title>
-        <div className="title">
-          <h2>Lingeries</h2>
         </div>
-      </Title>
 
-      <Background>
-        <Products>
-          <div>
-            <img src={main3} alt="lingerie" />
-            <span>Lingerie preta</span>
-            <span>Valor R$: 100,00</span>
-            <button type="button">Comprar</button>
-          </div>
+        <div className="itens">
+          <a href="lingirie">
+            <img src={item2} alt="Lingirie" />
+            <h3>Lingirie</h3>
+            <span>R$ 100,00</span>
+          </a>
+        </div>
 
-          <div>
-            <img src={main3} alt="lingerie" />
-            <span>Lingerie preta</span>
-            <span>Valor R$: 100,00</span>
-            <button type="button">Comprar</button>
-          </div>
+        <div className="itens">
+          <a href="lingirie">
+            <img src={item3} alt="Lingirie" />
+            <h3>Lingirie</h3>
+            <span>R$ 100,00</span>
+          </a>
+        </div>
 
-          <div>
-            <img src={main3} alt="lingerie" />
-            <span>Lingerie preta</span>
-            <span>Valor R$: 100,00</span>
-            <button type="button">Comprar</button>
-          </div>
+        <div className="itens">
+          <a href="lingirie">
+            <img src={item1} alt="Lingirie" />
+            <h3>Lingirie</h3>
+            <span>R$ 100,00</span>
+          </a>
+        </div>
 
-          <div>
-            <img src={main3} alt="lingerie" />
-            <span>Lingerie preta</span>
-            <span>Valor R$: 100,00</span>
-            <button type="button">Comprar</button>
-          </div>
+        <div className="itens">
+          <a href="lingirie">
+            <img src={item2} alt="Lingirie" />
+            <h3>Lingirie</h3>
+            <span>R$ 100,00</span>
+          </a>
+        </div>
 
-          <div>
-            <img src={main3} alt="lingerie" />
-            <span>Lingerie preta</span>
-            <span>Valor R$: 100,00</span>
-            <button type="button">Comprar</button>
-          </div>
+        <div className="itens">
+          <a href="lingirie">
+            <img src={item3} alt="Lingirie" />
+            <h3>Lingirie</h3>
+            <span>R$ 100,00</span>
+          </a>
+        </div>
+      </Section>
 
-          <div>
-            <img src={main3} alt="lingerie" />
-            <span>Lingerie preta</span>
-            <span>Valor R$: 100,00</span>
-            <button type="button">Comprar</button>
-          </div>
+      <Footer>
+        <div className="payment">
+          <h3>Formas de pagamento</h3>
+          <ul>
+            <li>Visa</li>
+            <li>MasterCard</li>
+            <li>Boleto</li>
+          </ul>
+        </div>
 
-          <div>
-            <img src={main3} alt="lingerie" />
-            <span>Lingerie preta</span>
-            <span>Valor R$: 100,00</span>
-            <button type="button">Comprar</button>
-          </div>
+        <div className="socialNetwork">
+          <h3>Redes sociais</h3>
+          <ul>
+            <li>
+              <a href="facebook">
+                <FiFacebook />
+              </a>
+            </li>
+            <li>
+              <a href="instagram">
+                <FiInstagram />
+              </a>
+            </li>
+          </ul>
+        </div>
 
-          <div>
-            <img src={main3} alt="lingerie" />
-            <span>Lingerie preta</span>
-            <span>Valor R$: 100,00</span>
-            <button type="button">Comprar</button>
-          </div>
-        </Products>
-      </Background>
-    </Main>
-  </Container>
-);
+        <div className="questions">
+          <ul>
+            <li>
+              <a href="/about">Sobre nos</a>
+            </li>
+            <li>
+              <a href="/doubts">Duvidas frequentes</a>
+            </li>
+            <li>
+              <a href="/change">Politica de troca e devoluçao</a>
+            </li>
+          </ul>
+        </div>
+      </Footer>
+    </Container>
+  );
+};
 
-export default Lingerie;
+export default Lingiries;

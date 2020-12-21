@@ -1,105 +1,181 @@
 import React from 'react';
-import { FiSearch, FiShoppingCart, FiUser } from 'react-icons/fi';
+import {
+  FiSearch,
+  FiShoppingCart,
+  FiUser,
+  FiFacebook,
+  FiInstagram,
+} from 'react-icons/fi';
 
-import logoImg from '../../assets/khali.png';
-import main3 from '../../assets/main3.jpg';
-import main2 from '../../assets/main2.jpg';
+import logo from '../../assets/khali.png';
+import section1 from '../../assets/section1.jpg';
+import section2 from '../../assets/section2.jpg';
 import main1 from '../../assets/main1.jpg';
-import description from '../../assets/description.jpg';
+import main3 from '../../assets/main3.jpg';
 
 import {
   Container,
   Header,
-  Logo,
-  HeaderWelcome,
+  Message,
   Navigation,
-  List,
-  Nav,
-  Main,
-  Background,
-  Description,
+  Section,
+  Section2,
+  Section3,
+  Itens,
+  Footer,
 } from './styles';
 
-const Dashboard: React.FC = () => (
-  <Container>
-    <Header>
-      <Logo>
-        <img src={logoImg} alt="KhalyStore" />
-      </Logo>
-    </Header>
+const Dashboard: React.FC = () => {
+  return (
+    <Container>
+      <Message>
+        <h2>Bem-vindo a Khaly</h2>
+      </Message>
+      <Header>
+        <img src={logo} alt="KhalyStore" />
 
-    <HeaderWelcome>
-      <h1>Bem-Vindo a Khaly store</h1>
-    </HeaderWelcome>
+        <Navigation>
+          <div className="itens">
+            <ul>
+              <li>
+                <a href="lingiries">Lingiries</a>
+              </li>
+              <li>
+                <a href="biquinis">Biquinis</a>
+              </li>
+              <li>
+                <a href="semijoias">Semijoias</a>
+              </li>
+              <li>
+                <a href="folheadas">Folheadas</a>
+              </li>
+            </ul>
+          </div>
 
-    <Navigation>
-      <List>
-        <li>
-          <a href="/">Lingeries</a>
-        </li>
-        <li>
-          <a href="/">Biquinis</a>
-        </li>
-        <li>
-          <a href="/">Semi-joias</a>
-        </li>
-        <li>
-          <a href="/">Bijuteria</a>
-        </li>
-        <li>
-          <a href="/">Folheado</a>
-        </li>
-      </List>
+          <div className="menu">
+            <ul>
+              <li>
+                <a href="/search">
+                  <FiSearch />
+                </a>
+              </li>
+              <li>
+                <a href="/cart">
+                  <FiShoppingCart />
+                </a>
+              </li>
+              <li>
+                <a href="/SignIn">
+                  <FiUser />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </Navigation>
+      </Header>
 
-      <Nav>
-        <li>
-          <a href="/search">
-            <FiSearch />
+      <Section>
+        <div>
+          <a href="lingirie">
+            <img src={section1} alt="Lingirie" />
           </a>
-        </li>
-        <li>
-          <a href="/cart">
-            <FiShoppingCart />
-          </a>
-        </li>
-        <li>
-          <a href="/SignIn">
-            <FiUser />
-          </a>
-        </li>
-      </Nav>
-    </Navigation>
-
-    <Main>
-      <Background>
-        <div className="twoImages">
-          <img src={main3} alt="main3" />
-          <button type="button">COMPRE AGORA</button>
-          <img src={main1} alt="main1" />
-          <button type="button">COMPRE AGORA</button>
+          <span>Sinta-se leve e linda.</span>
         </div>
-        <div className="oneImage">
-          <img src={main2} alt="main2" />
-          <button type="button">COMPRE AGORA</button>
+
+        <div>
+          <a href="lingirie">
+            <img src={section2} alt="Lingirie" />
+          </a>
+          <span>Sinta-se leve e linda.</span>
+        </div>
+      </Section>
+
+      <Section2>
+        <div>
+          <a href="acessorios">
+            <img src={main1} alt="acessorios" />
+          </a>
         </div>
         <div className="box">
-          <h1>Experimente nossas peças.</h1>
-          <h1>Viva bons momentos.</h1>
-          <h1>Tire boas fotos.</h1>
+          <span>ACESSORIOS LINDOS, ESCOLHA UM QUE SEJA A SUA CARA.</span>
         </div>
-      </Background>
-    </Main>
+      </Section2>
 
-    <Description>
-      <div>
-        <h2>
-          Entregamos para todo o Brasil, Selecione seus produtos e calcule o
-          frete.
-        </h2>
-        <img src={description} alt="Description" />
-      </div>
-    </Description>
-  </Container>
-);
+      <Section3>
+        <div>
+          <h1>SE PREPARE PARA NOSSAS NOVIDADES, VOCE VAI FICAR ENCANTADA.</h1>
+          <h2>Nao perca tempo, escolha seu produto antes que esgote :)</h2>
+        </div>
+      </Section3>
+
+      <Itens>
+        <div>
+          <a href="lingirie">
+            <img src={main3} alt="Lingirie" />
+            <h3>Lingirie preta</h3>
+            <span>R$100,00</span>
+          </a>
+        </div>
+
+        <div>
+          <a href="lingirie">
+            <img src={main3} alt="Lingirie" />
+            <h3>Lingirie preta</h3>
+            <span>R$100,00</span>
+          </a>
+        </div>
+
+        <div>
+          <a href="lingirie">
+            <img src={main3} alt="Lingirie" />
+            <h3>Lingirie preta</h3>
+            <span>R$100,00</span>
+          </a>
+        </div>
+      </Itens>
+
+      <Footer>
+        <div className="payment">
+          <h3>Formas de pagamento</h3>
+          <ul>
+            <li>Visa</li>
+            <li>MasterCard</li>
+            <li>Boleto</li>
+          </ul>
+        </div>
+
+        <div className="socialNetwork">
+          <h3>Redes sociais</h3>
+          <ul>
+            <li>
+              <a href="facebook">
+                <FiFacebook />
+              </a>
+            </li>
+            <li>
+              <a href="instagram">
+                <FiInstagram />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="questions">
+          <ul>
+            <li>
+              <a href="/about">Sobre nos</a>
+            </li>
+            <li>
+              <a href="/doubts">Duvidas frequentes</a>
+            </li>
+            <li>
+              <a href="/change">Politica de troca e devoluçao</a>
+            </li>
+          </ul>
+        </div>
+      </Footer>
+    </Container>
+  );
+};
 
 export default Dashboard;
