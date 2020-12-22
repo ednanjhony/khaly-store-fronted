@@ -1,113 +1,121 @@
 import React from 'react';
-import { FiSearch, FiShoppingCart, FiUser } from 'react-icons/fi';
+import {
+  FiSearch,
+  FiShoppingCart,
+  FiUser,
+  FiFacebook,
+  FiInstagram,
+} from 'react-icons/fi';
 
-import logoImg from '../../assets/khali.png';
-import main3 from '../../assets/main3.jpg';
+import logo from '../../assets/khali.png';
+import item1 from '../../assets/item1.jpg';
 
 import {
   Container,
   Header,
-  Logo,
-  HeaderWelcome,
+  Message,
   Navigation,
-  List,
-  Nav,
-  Main,
-  Background,
-  Product,
-  Details,
+  Section,
+  Footer,
 } from './styles';
 
-const Cart: React.FC = () => (
-  <Container>
-    <Header>
-      <Logo>
-        <img src={logoImg} alt="KhalyStore" />
-      </Logo>
-    </Header>
+const ShowDetails: React.FC = () => {
+  return (
+    <Container>
+      <Message>
+        <h2>Bem-vindo a Khaly</h2>
+      </Message>
+      <Header>
+        <img src={logo} alt="KhalyStore" />
 
-    <HeaderWelcome>
-      <h1>Bem-Vindo a Khaly store</h1>
-    </HeaderWelcome>
+        <Navigation>
+          <div className="itens">
+            <ul>
+              <li>
+                <a href="lingiries">Lingiries</a>
+              </li>
+              <li>
+                <a href="biquinis">Biquinis</a>
+              </li>
+              <li>
+                <a href="semijoias">Semijoias</a>
+              </li>
+              <li>
+                <a href="folheadas">Folheadas</a>
+              </li>
+            </ul>
+          </div>
 
-    <Navigation>
-      <List>
-        <li>
-          <a href="/">Lingeries</a>
-        </li>
-        <li>
-          <a href="/">Biquinis</a>
-        </li>
-        <li>
-          <a href="/">Semi-joias</a>
-        </li>
-        <li>
-          <a href="/">Bijuteria</a>
-        </li>
-        <li>
-          <a href="/">Folheado</a>
-        </li>
-      </List>
+          <div className="menu">
+            <ul>
+              <li>
+                <a href="/search">
+                  <FiSearch />
+                </a>
+              </li>
+              <li>
+                <a href="/cart">
+                  <FiShoppingCart />
+                </a>
+              </li>
+              <li>
+                <a href="/SignIn">
+                  <FiUser />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </Navigation>
+      </Header>
 
-      <Nav>
-        <li>
-          <a href="/search">
-            <FiSearch />
-          </a>
-        </li>
-        <li>
-          <a href="/cart">
-            <FiShoppingCart />
-          </a>
-        </li>
-        <li>
-          <a href="/SignIn">
-            <FiUser />
-          </a>
-        </li>
-      </Nav>
-    </Navigation>
+      <Section>
+        <div className="cart">
+          <h1>MINHA SACOLA</h1>
+        </div>
+      </Section>
 
-    <Main>
-      <Background>
-        <Product>
-          <div>
-            <img src={main3} alt="lingerie" />
-            <span>Lingerie preta QTD: 1, valor R$100,00</span>
-          </div>
-          <div>
-            <img src={main3} alt="lingerie" />
-            <span>Lingerie preta QTD: 1, valor R$100,00</span>
-          </div>
-          <div>
-            <img src={main3} alt="lingerie" />
-            <span>Lingerie preta estercaisdhau QTD: 1, valor R$100,00</span>
-          </div>
-          <div>
-            <img src={main3} alt="lingerie" />
-            <span>Lingerie preta QTD: 1, valor R$100,00</span>
-          </div>
-          <div>
-            <img src={main3} alt="lingerie" />
-            <span>Lingerie preta estercaisdhau QTD: 1, valor R$100,00</span>
-          </div>
-          <div>
-            <img src={main3} alt="lingerie" />
-            <span>Lingerie preta QTD: 1, valor R$100,00</span>
-          </div>
-          <div>
-            <img src={main3} alt="lingerie" />
-            <span>Lingerie preta estercaisdhau QTD: 1, valor R$100,00</span>
-          </div>
-        </Product>
+      <Footer>
+        <div className="payment">
+          <h3>Formas de pagamento</h3>
+          <ul>
+            <li>Visa</li>
+            <li>MasterCard</li>
+            <li>Boleto</li>
+          </ul>
+        </div>
 
-        <Details>
-          <span>TOTAL: R$300,00</span>
-          <button type="button">FINALIZAR A COMPRA</button>
-        </Details>
-      </Background>
-    </Main>
-  </Container>
-);
+        <div className="socialNetwork">
+          <h3>Redes sociais</h3>
+          <ul>
+            <li>
+              <a href="facebook">
+                <FiFacebook />
+              </a>
+            </li>
+            <li>
+              <a href="instagram">
+                <FiInstagram />
+              </a>
+            </li>
+          </ul>
+        </div>
 
-export default Cart;
+        <div className="questions">
+          <ul>
+            <li>
+              <a href="/about">Sobre nos</a>
+            </li>
+            <li>
+              <a href="/doubts">Duvidas frequentes</a>
+            </li>
+            <li>
+              <a href="/change">Politica de troca e devoluçao</a>
+            </li>
+          </ul>
+        </div>
+      </Footer>
+    </Container>
+  );
+};
+
+export default ShowDetails;
