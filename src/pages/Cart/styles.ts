@@ -106,14 +106,73 @@ export const Section = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  height: 800px;
+  min-height: 800px;
+  max-height: 1500px;
   background: #fff;
   margin: 0 auto;
   padding: 0 250px;
   border-bottom: 1px solid #bdbdbd;
 
+
+
   @media (max-width: 1700px) {
     padding: 0 10px;
+  }
+
+  .cart {
+
+
+
+    h1 {
+    color: #e57373;
+    border-bottom: 1px solid #000;
+  }
+
+    .itens {
+      margin-top: 50px;
+
+     > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 60px;
+}
+
+        img {
+          height: 70px;
+          width: 70px;
+        }
+
+        h3,
+        h4,
+        span {
+          color: #e57373;
+        }
+      }
+    }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+
+      h3, h4 {
+        color: #e57373;
+        padding-top: 10px;
+      }
+
+      button {
+        width: 150px;
+        height: 50px;
+        border: 0;
+        border-radius: 9px;
+        background: #e57373;
+        color: #fff;
+        margin-top: 20px;
+      }
+}
   }
 `;
 

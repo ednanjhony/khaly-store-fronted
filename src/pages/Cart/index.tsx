@@ -70,7 +70,40 @@ const ShowDetails: React.FC = () => {
 
       <Section>
         <div className="cart">
-          <h1>MINHA SACOLA</h1>
+          <div className="itens">
+            <h1>MINHA SACOLA</h1>
+            <div>
+              <img src={item1} alt="Lingirie" />
+              <h3>Lingirie</h3>
+              <h4>Tamanho: M</h4>
+              <span>R$100,00</span>
+            </div>
+            <div>
+              <img src={item1} alt="Lingirie" />
+              <h3>Lingirie</h3>
+              <h4>Tamanho: M</h4>
+              <span>R$100,00</span>
+            </div>
+            <div>
+              <img src={item1} alt="Lingirie" />
+              <h3>Lingirie</h3>
+              <h4>Tamanho: M</h4>
+              <span>R$100,00</span>
+            </div>
+            <div>
+              <img src={item1} alt="Lingirie" />
+              <h3>Lingirie</h3>
+              <h4>Tamanho: M</h4>
+              <span>R$100,00</span>
+            </div>
+          </div>
+        </div>
+        <div className="details">
+          <h3>Resumo</h3>
+          <h4>Subtotal: R$400,00</h4>
+          <h4>Frete: R$50,00</h4>
+          <h4>Total: R$450,00</h4>
+          <button type="button">Finalizar compra</button>
         </div>
       </Section>
 
