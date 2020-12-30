@@ -6,13 +6,13 @@ import React from 'react';
 // import Dashboard from './pages/Dashboard';
 // import Lingerie from './pages/Lingerie';
 // import ShowDetails from './pages/ShowDetails';
-import Cart from './pages/Cart';
-// import Layout from './components/Layout';
+// import Cart from './pages/Cart';
+import MyAccount from './pages/MyAccount';
 import GlobalStyle from './styles/global';
 
 const App: React.FC = () => (
   <>
-    <Cart />
+    <MyAccount />
     <GlobalStyle />
   </>
 );
