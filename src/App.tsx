@@ -7,12 +7,13 @@ import React from 'react';
 // import Lingerie from './pages/Lingerie';
 // import ShowDetails from './pages/ShowDetails';
 // import Cart from './pages/Cart';
-import MyAccount from './pages/MyAccount';
+// import MyAccount from './pages/MyAccount';
+import MyRequests from './pages/MyRequests';
 import GlobalStyle from './styles/global';
 
 const App: React.FC = () => (
   <>
-    <MyAccount />
+    <MyRequests />
     <GlobalStyle />
   </>
 );
