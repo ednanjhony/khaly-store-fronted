@@ -9,6 +9,7 @@ import React from 'react';
 // import Cart from './pages/Cart';
 // import MyAccount from './pages/MyAccount';
 import MyRequests from './pages/MyRequests';
+// import DetailsRequest from './pages/DetailsRequest';
 import GlobalStyle from './styles/global';
 
 const App: React.FC = () => (

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { shade } from 'polished';
 
 export const Container = styled.div`
   display: flex;
@@ -121,50 +120,40 @@ export const Section = styled.div`
     }
   }
 
-  .content {
+  .myItens {
     display: flex;
     flex-direction: column;
-    width: 800px;
     margin: 50px auto;
+    width: 800px;
 
-    .content-title {
-      background: #e57373;
-
-      > ul {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-
-        > li {
-          padding: 10px;
-        }
-      }
+    @media (max-width: 1000px) {
+      width: 430px;
     }
 
-    .content-itens {
-      overflow-y: scroll;
-      height: 300px;
+    .item {
+      border-bottom: 1px solid #bdbdbd;
+
       > ul {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         list-style: none;
-        border-bottom: 1px solid #bdbdbd;
-        &:hover {
-          background: #fce4ec;
-        }
 
         > li {
-          padding: 10px;
-          > a {
+          > img {
+            height: 60px;
+            width: 60px;
+          }
+
+          > span {
             color: #e57373;
-            text-decoration: none;
+
+            @media (max-width: 1000px) {
+              font-size: 12px;
+            }
           }
         }
       }
-    }
-
-    @media (max-width: 900px) {
-      width: 440px;
     }
   }
 `;
@@ -179,6 +168,7 @@ export const Footer = styled.div`
 
   div.payment {
     margin: 10px;
+
     ul {
       list-style: none;
 
@@ -211,6 +201,7 @@ export const Footer = styled.div`
 
   .questions {
     margin: 10px;
+
     ul {
       list-style: none;
 

@@ -11,6 +11,7 @@ export default createGlobalStyle`
   html,body, #root {
     max-height: 100vh;
     max-width: 100vw;
+    overflow-x: hidden;
 
     width: 100%;
     height: 100%;

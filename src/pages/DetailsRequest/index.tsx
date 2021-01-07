@@ -8,6 +8,7 @@ import {
 } from 'react-icons/fi';
 
 import logo from '../../assets/khali.png';
+import item1 from '../../assets/item1.jpg';
 
 import {
   Container,
@@ -18,7 +19,7 @@ import {
   Footer,
 } from './styles';
 
-const MyRequests: React.FC = () => {
+const DetailsRequest: React.FC = () => {
   return (
     <Container>
       <Message>
@@ -69,128 +70,102 @@ const MyRequests: React.FC = () => {
 
       <Section>
         <div className="title">
-          <h1>Meus pedidos</h1>
+          <h1>Meu pedido #01</h1>
         </div>
-        <div className="content">
-          <div className="content-title">
+
+        <div className="myItens">
+          <div className="item">
             <ul>
-              <li>Pedido</li>
-              <li>Data</li>
-              <li>Pagamento</li>
-              <li>Situaçao</li>
+              <li>
+                <img src={item1} alt="Lingirie" />
+              </li>
+              <li>
+                <span>Lingirie</span>
+              </li>
+              <li>
+                <span>R$100,00</span>
+              </li>
+              <li>
+                <span>Tamanho: P</span>
+              </li>
+              <li>
+                <span>QTD: 2</span>
+              </li>
             </ul>
           </div>
-          <div className="content-itens">
+          <div className="item">
             <ul>
               <li>
-                <a href="/detailsRequest">#01</a>
+                <img src={item1} alt="Lingirie" />
               </li>
               <li>
-                <a href="/detailsRequest">08/09</a>
+                <span>Lingirie</span>
               </li>
               <li>
-                <a href="/detailsRequest">Boleto</a>
+                <span>R$100,00</span>
               </li>
               <li>
-                <a href="/detailsRequest">Entregue</a>
+                <span>Tamanho: P</span>
+              </li>
+              <li>
+                <span>QTD: 2</span>
               </li>
             </ul>
+          </div>
+          <div className="item">
             <ul>
               <li>
-                <a href="/detailsRequest">#02</a>
+                <img src={item1} alt="Lingirie" />
               </li>
               <li>
-                <a href="/detailsRequest">08/09</a>
+                <span>Lingirie</span>
               </li>
               <li>
-                <a href="/detailsRequest">Credito</a>
+                <span>R$100,00</span>
               </li>
               <li>
-                <a href="/detailsRequest">Pendente</a>
+                <span>Tamanho: P</span>
+              </li>
+              <li>
+                <span>QTD: 2</span>
               </li>
             </ul>
+          </div>
+          <div className="item">
             <ul>
               <li>
-                <a href="/detailsRequest">#01</a>
+                <img src={item1} alt="Lingirie" />
               </li>
               <li>
-                <a href="/detailsRequest">08/09</a>
+                <span>Lingirie</span>
               </li>
               <li>
-                <a href="/detailsRequest">Debito</a>
+                <span>R$100,00</span>
               </li>
               <li>
-                <a href="/detailsRequest">Entregue</a>
+                <span>Tamanho: P</span>
+              </li>
+              <li>
+                <span>QTD: 2</span>
               </li>
             </ul>
+          </div>
+          <div className="item">
             <ul>
               <li>
-                <a href="/detailsRequest">#01</a>
+                <img src={item1} alt="Lingirie" />
               </li>
               <li>
-                <a href="/detailsRequest">08/09</a>
+                <span>Lingirie</span>
               </li>
               <li>
-                <a href="/detailsRequest">Boleto</a>
+                <span>R$100,00</span>
               </li>
               <li>
-                <a href="/detailsRequest">Cancelado</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="/detailsRequest">#01</a>
+                <span>Tamanho: P</span>
               </li>
               <li>
-                <a href="/detailsRequest">08/09</a>
-              </li>
-              <li>
-                <a href="/detailsRequest">Boleto</a>
-              </li>
-              <li>
-                <a href="/detailsRequest">Entregue</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="/detailsRequest">#01</a>
-              </li>
-              <li>
-                <a href="/detailsRequest">08/09</a>
-              </li>
-              <li>
-                <a href="/detailsRequest">Boleto</a>
-              </li>
-              <li>
-                <a href="/detailsRequest">Entregue</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="/detailsRequest">#01</a>
-              </li>
-              <li>
-                <a href="/detailsRequest">08/09</a>
-              </li>
-              <li>
-                <a href="/detailsRequest">Boleto</a>
-              </li>
-              <li>
-                <a href="/detailsRequest">Entregue</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="/detailsRequest">#01</a>
-              </li>
-              <li>
-                <a href="/detailsRequest">08/09</a>
-              </li>
-              <li>
-                <a href="/detailsRequest">Boleto</a>
-              </li>
-              <li>
-                <a href="/detailsRequest">Entregue</a>
+                <span>QTD: 2</span>
               </li>
             </ul>
           </div>
@@ -241,4 +216,4 @@ const MyRequests: React.FC = () => {
   );
 };
 
-export default MyRequests;
+export default DetailsRequest;
