@@ -116,6 +116,10 @@ export const Section = styled.div`
     padding: 0 10px;
   }
 
+  @media (max-width: 950px) {
+    height: 500px;
+  }
+
   > div {
     display: flex;
     flex-direction: column;
@@ -146,6 +150,10 @@ export const Section2 = styled.div`
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #bdbdbd;
+
+  @media (max-width: 950px) {
+    height: 500px;
+  }
 
   img {
     height: max(200px, min(400px, 40vw));
@@ -184,10 +192,19 @@ export const Section3 = styled.div`
   background: #fff;
   justify-content: center;
 
+  @media (max-width: 1200px) {
+    height: 260px;
+  }
+
   div {
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media (max-width: 1200px) {
+      height: 200px;
+      font-size: 12px;
+    }
 
     h1 {
       font-family: 'Dancing Script', cursive;
@@ -205,11 +222,26 @@ export const Section3 = styled.div`
 
 export const Itens = styled.div`
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
   height: 500px;
   width: 100%;
   background: #fff;
   padding: 0 300px;
+
+  @media (max-width: 950px) {
+    grid-template-columns: 1fr 1fr;
+    height: 450px;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+    height: 350px;
+    overflow: hidden;
+    justify-content: center;
+  }
 
   div {
     display: flex;

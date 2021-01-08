@@ -116,6 +116,10 @@ export const Section = styled.div`
     padding: 0 10px;
   }
 
+  @media (max-width: 1000px) {
+    height: 500px;
+  }
+
   .item {
     margin-top: 100px;
 
@@ -172,6 +176,10 @@ export const Section2 = styled.div`
   height: 600px;
   background: #fff;
 
+  @media (max-width: 1000px) {
+    height: 500px;
+  }
+
   .details {
     display: flex;
     flex-direction: column;
@@ -185,6 +193,7 @@ export const Section2 = styled.div`
     h3,
     h4,
     span {
+      margin-left: 20px;
       color: #e57373;
     }
   }

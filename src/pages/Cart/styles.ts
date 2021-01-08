@@ -121,11 +121,13 @@ export const Section = styled.div`
 
   .cart {
 
-
-
     h1 {
     color: #e57373;
     border-bottom: 1px solid #000;
+
+    @media (max-width: 1000px) {
+      font-size: 18px;
+    }
   }
 
     .itens {
@@ -136,6 +138,7 @@ export const Section = styled.div`
         justify-content: space-between;
         align-items: center;
         margin-top: 60px;
+        margin-bottom: 60px;
 }
 
         img {
@@ -147,6 +150,10 @@ export const Section = styled.div`
         h4,
         span {
           color: #e57373;
+
+          @media (max-width: 1000px) {
+            font-size: 12px;
+          }
         }
       }
     }
@@ -161,6 +168,10 @@ export const Section = styled.div`
       h3, h4 {
         color: #e57373;
         padding-top: 10px;
+
+        @media (max-width: 1000px) {
+          font-size: 14px;
+        }
       }
 
       button {
@@ -171,6 +182,13 @@ export const Section = styled.div`
         background: #e57373;
         color: #fff;
         margin-top: 20px;
+
+        @media (max-width: 1000px) {
+            width: 100px;
+            height: 50px;
+
+            font-size: 13px;
+          }
       }
 }
   }

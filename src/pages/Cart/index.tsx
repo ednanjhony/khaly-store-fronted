@@ -75,25 +75,26 @@ const ShowDetails: React.FC = () => {
             <div>
               <img src={item1} alt="Lingirie" />
               <h3>Lingirie</h3>
-              <h4>Tamanho: M</h4>
+              <h4>Tam: M</h4>
+              <span>R$100,00</span>
+            </div>
+
+            <div>
+              <img src={item1} alt="Lingirie" />
+              <h3>Lingirie</h3>
+              <h4>Tam: M</h4>
               <span>R$100,00</span>
             </div>
             <div>
               <img src={item1} alt="Lingirie" />
               <h3>Lingirie</h3>
-              <h4>Tamanho: M</h4>
+              <h4>Tam: M</h4>
               <span>R$100,00</span>
             </div>
             <div>
               <img src={item1} alt="Lingirie" />
               <h3>Lingirie</h3>
-              <h4>Tamanho: M</h4>
-              <span>R$100,00</span>
-            </div>
-            <div>
-              <img src={item1} alt="Lingirie" />
-              <h3>Lingirie</h3>
-              <h4>Tamanho: M</h4>
+              <h4>Tam: M</h4>
               <span>R$100,00</span>
             </div>
           </div>
