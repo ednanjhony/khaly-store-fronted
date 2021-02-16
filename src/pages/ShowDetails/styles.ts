@@ -216,7 +216,7 @@ export const Footer = styled.div`
   align-items: center;
   background: #e57373;
   width: 100%;
-  height: 200px;
+  height: 150px;
 
   div.payment {
     margin: 10px;

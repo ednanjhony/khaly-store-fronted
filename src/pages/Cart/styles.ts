@@ -132,6 +132,7 @@ export const Section = styled.div`
 
     .itens {
       margin-top: 50px;
+      
 
      > div {
         display: flex;
@@ -200,7 +201,7 @@ export const Footer = styled.div`
   align-items: center;
   background: #e57373;
   width: 100%;
-  height: 200px;
+  height: 150px;
 
   div.payment {
     margin: 10px;

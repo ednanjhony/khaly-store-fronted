@@ -1,21 +1,16 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-// import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
-// import ForgotPassword from './pages/ForgotPassword';
-// import Dashboard from './pages/Dashboard';
-// import Lingerie from './pages/Lingerie';
-// import ShowDetails from './pages/ShowDetails';
-// import Cart from './pages/Cart';
-// import MyAccount from './pages/MyAccount';
-// import MyRequests from './pages/MyRequests';
-// import DetailsRequest from './pages/DetailsRequest';
+import Routes from './routes';
+
 import GlobalStyle from './styles/global';
 
 const App: React.FC = () => (
   <>
-    <SignUp />
-    <GlobalStyle />
+    <Router>
+      <Routes />
+      <GlobalStyle />
+    </Router>
   </>
 );
 
